@@ -1,0 +1,75 @@
+.flex-Container{
+    border: 2px solid grey;
+    height: 45vh;
+    display: flex;
+
+  align-items:flex-end;
+    /* flex-direction: column-reverse; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* align-items: center;
+    align-items: flex-end;
+    align-items: flex-start; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: column wrap; */
+
+
+}
+
+.fitem{
+    background-color: red;
+    border: 2px solid black;
+    margin:12px;
+    width: 122px;
+    height: 122px;
+}
+
+.item1{
+    order: 3;
+    /* flex-grow: 3; */
+    /* flex-shrink: 2; */
+    align-self: center;
+}
+
+.item4{
+    order: 4;
+    /* flex-grow: 2; */
+}
+
+
+
+/* -------------------------------
+ */
+ /* Grid */
+
+
+.gcontainer{
+  width:600px;
+  height:900px;
+  background-color:lightpink;
+  display:grid;
+  grid-template-rows:50px 133px 50px;
+  /* if you want to change size of one row then write grid-template-row:140px 1fr 1fr */
+ /* repeat(3,1fr); whatever space */
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 12px;
+  row-gap:34px;
+
+}
+.gitem{
+
+  /* if we remove width height of gitem then grid items take more space */
+  background-color:red;
+  border:1px solid white;
+}
+.itema{
+grid-column-start: 1;
+grid-column-end:4;
+}
+.iteme{
+grid-column-start: 1;
+grid-column-end:4;
+/* we can also write it as grid-column:1/span 2; */
+}
